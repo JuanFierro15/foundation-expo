@@ -7,6 +7,9 @@ Página web de exposición sobre el framework CSS **Foundation for Sites**
 ## Requisitos
 
 - Node.js 18 o superior
+- **Usar npm** (no pnpm ni yarn) — el repo solo trae `package-lock.json`.
+  Instalar con otro gestor genera un árbol de dependencias distinto y puede
+  romper la compilación de Sass de Foundation.
 
 ## Instalación y ejecución
 
