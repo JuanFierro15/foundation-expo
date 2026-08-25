@@ -1,0 +1,11 @@
+// Punto de entrada de estilos del proyecto.
+//
+// 1. Nuestros ajustes de Foundation (colores, radios, tipografía)
+@import 'settings';
+
+// 2. Foundation completo: grid, tipografía y todos los componentes
+@import 'foundation-sites/scss/foundation';
+@include foundation-everything;
+
+// 3. Estilos propios del sitio (van después para poder sobreescribir Foundation)
+@import 'custom';
