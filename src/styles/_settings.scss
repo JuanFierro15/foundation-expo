@@ -14,3 +14,10 @@ $alert-color: #cc4b37;
 $global-radius: 6px;
 $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $header-font-family: $body-font-family;
+
+// Aire a los lados del contenido. Por defecto Foundation deja solo la mitad
+// del gutter (10px en móvil), lo que pega los títulos al borde de la pantalla.
+$grid-container-padding: (
+  'small': 40px,
+  'medium': 30px,
+);

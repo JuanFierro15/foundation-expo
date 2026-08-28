@@ -227,7 +227,9 @@ main {
 }
 
 .overview {
-  padding: 2rem 0 3rem;
+  // Solo padding vertical: el horizontal lo aporta .grid-container.
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 
   .card {
     height: 100%;
@@ -242,7 +244,9 @@ main {
 
 // ---- Encabezado reutilizable de sección ----
 .section-title {
-  padding: 2.5rem 0 1.5rem;
+  // Solo padding vertical: el horizontal lo aporta .grid-container.
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
 
   .eyebrow {
     text-transform: uppercase;
@@ -393,7 +397,9 @@ main {
 
 // ---- Integrantes (Home) ----
 .team-section {
-  padding: 1rem 0 3rem;
+  // Solo padding vertical: el horizontal lo aporta .grid-container.
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 
   h5 {
     margin-bottom: 1rem;
