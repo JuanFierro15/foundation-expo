@@ -18,18 +18,30 @@ main {
   border-bottom: 1px solid $medium-gray;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 .top-bar {
   max-width: rem-calc(1200);
   margin: 0 auto;
   padding: 0.75rem 1rem;
+  background: transparent;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem;
+
+  .top-bar-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+
+    @include breakpoint(medium) {
+      width: auto;
+    }
+  }
 
   .logo-link {
     display: flex;
@@ -38,6 +50,11 @@ main {
     font-weight: 700;
     color: $body-font-color;
     text-decoration: none;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.85;
+    }
   }
 
   .logo-badge {
@@ -50,15 +67,139 @@ main {
     background: $primary-color;
     color: $white;
     font-weight: 700;
+    flex-shrink: 0;
   }
 
-  .menu li a {
-    color: $body-font-color;
+  // Botón de menú hamburguesa para móviles
+  .menu-toggle {
+    background: transparent;
+    border: 1px solid transparent;
+    padding: 0.5rem;
+    border-radius: $global-radius;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    line-height: 1;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $light-gray;
+      border-color: $medium-gray;
+      outline: none;
+    }
+
+    .hamburger-icon {
+      width: 22px;
+      height: 16px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $body-font-color;
+        border-radius: 2px;
+        transition: transform 0.25s ease, opacity 0.2s ease;
+        transform-origin: center;
+      }
+    }
+
+    &.is-open .hamburger-icon {
+      span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+    }
   }
 
-  .is-active-link {
-    color: $primary-color;
-    font-weight: 700;
+  // Menú colapsable / responsivo
+  .top-bar-menu {
+    width: 100%;
+
+    @include breakpoint(small only) {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, opacity 0.25s ease, margin-top 0.25s ease;
+      margin-top: 0;
+
+      &.is-open {
+        max-height: rem-calc(360);
+        opacity: 1;
+        margin-top: 0.75rem;
+        padding-top: 0.5rem;
+        border-top: 1px solid $light-gray;
+      }
+
+      .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.25rem;
+
+        li {
+          width: 100%;
+
+          a {
+            padding: 0.75rem 1rem;
+            border-radius: $global-radius;
+            font-size: 1rem;
+            color: $body-font-color;
+            transition: background-color 0.15s ease, color 0.15s ease;
+
+            &:hover {
+              background-color: scale-color($primary-color, $lightness: 92%);
+              color: $primary-color;
+            }
+
+            &.is-active-link {
+              background-color: scale-color($primary-color, $lightness: 90%);
+              color: $primary-color;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+
+    @include breakpoint(medium) {
+      width: auto;
+      display: flex;
+      align-items: center;
+
+      .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 0.25rem;
+        background: transparent;
+
+        li a {
+          color: $body-font-color;
+          padding: 0.5rem 0.75rem;
+          border-radius: $global-radius;
+          transition: color 0.15s ease, background-color 0.15s ease;
+
+          &:hover {
+            color: $primary-color;
+            background-color: $light-gray;
+          }
+
+          &.is-active-link {
+            color: $primary-color;
+            font-weight: 700;
+          }
+        }
+      }
+    }
   }
 }
 
