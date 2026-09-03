@@ -20,24 +20,27 @@ del lado del cliente y estilos basados en el Sass de Foundation.
 | Lenguaje         | JavaScript (JSX), módulos ES                  |
 | Gestor de paquetes | npm (solo `package-lock.json` versionado)    |
 
-## Capturas de pantalla
+Vistas principales del sitio (capturas en `docs/screenshots/`):
 
-<!--
-  Agrega aquí una captura por cada vista principal del sitio. Sugerencia de
-  formato (guarda las imágenes en docs/screenshots/ y referéncialas):
+### Inicio
 
-  ### Inicio
-  ![Inicio](docs/screenshots/home.png)
+![Inicio](docs/screenshots/home.jpg)
 
-  ### Historia
-  ![Historia](docs/screenshots/historia.png)
+### Historia de Foundation
 
-  ### Ejemplos de diseño
-  ![Ejemplos](docs/screenshots/ejemplos.png)
--->
+![Historia](docs/screenshots/historia.jpg)
 
-> Pendiente: agregar capturas de las vistas Inicio, Historia, ¿Para qué
-> sirve?, Instalación y Ejemplos.
+### ¿Para qué sirve?
+
+![¿Para qué sirve?](docs/screenshots/para-que-sirve.jpg)
+
+### Instalación
+
+![Instalación](docs/screenshots/instalacion.jpg)
+
+### Ejemplos de diseño
+
+![Ejemplos](docs/screenshots/ejemplos.jpg)
 
 ## Requisitos
 
