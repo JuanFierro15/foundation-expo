@@ -4,6 +4,41 @@ Página web de exposición sobre el framework CSS **Foundation for Sites**
 (historia, para qué sirve, instalación y ejemplos de diseño), construida con
 **React + Vite** e integrando **Foundation** vía `npm`.
 
+Trabajo para la asignatura **Lenguajes para la Web** (Universidad
+Surcolombiana). El sitio es una SPA (single-page application) con enrutado
+del lado del cliente y estilos basados en el Sass de Foundation.
+
+## Stack y tecnologías
+
+| Categoría        | Herramienta                                   |
+| ---------------- | --------------------------------------------- |
+| Librería UI      | React 18 (`react-dom`)                         |
+| Bundler / dev    | Vite 5 (`@vitejs/plugin-react`)               |
+| Enrutado         | React Router 6 (`react-router-dom`)           |
+| Framework CSS    | Foundation for Sites 6.9 (`foundation-sites`) |
+| Preprocesador    | Sass / SCSS (Dart Sass 1.77.8, versión fija)  |
+| Lenguaje         | JavaScript (JSX), módulos ES                  |
+| Gestor de paquetes | npm (solo `package-lock.json` versionado)    |
+
+## Capturas de pantalla
+
+<!--
+  Agrega aquí una captura por cada vista principal del sitio. Sugerencia de
+  formato (guarda las imágenes en docs/screenshots/ y referéncialas):
+
+  ### Inicio
+  ![Inicio](docs/screenshots/home.png)
+
+  ### Historia
+  ![Historia](docs/screenshots/historia.png)
+
+  ### Ejemplos de diseño
+  ![Ejemplos](docs/screenshots/ejemplos.png)
+-->
+
+> Pendiente: agregar capturas de las vistas Inicio, Historia, ¿Para qué
+> sirve?, Instalación y Ejemplos.
+
 ## Requisitos
 
 - Node.js 18 o superior
@@ -84,3 +119,16 @@ pide la estructura solicitada.
 | `/para-que-sirve`   | ¿Para qué sirve?                  |
 | `/instalacion`      | Instalación (CDN, npm, CLI)       |
 | `/ejemplos`         | Ejemplos de diseño (grid, botones, cards, navbar) |
+
+## Autores
+
+Exposición preparada para **Lenguajes para la Web** (Universidad Surcolombiana):
+
+- Juan Manuel Villalba Rincón — [@jmvr24](https://github.com/jmvr24)
+- Miguel Angel Medina Diaz — [@MiguelMD06](https://github.com/MiguelMD06)
+- Juan David Fierro Calderón — [@JuanFierro15](https://github.com/JuanFierro15)
+
+## Licencia
+
+Distribuido bajo la licencia **MIT**. Consulta el archivo [`LICENSE`](LICENSE)
+para el texto completo.
