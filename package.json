@@ -4,7 +4,34 @@
   "version": "0.1.0",
   "type": "module",
   "description": "Exposición sobre el framework CSS Foundation for Sites — React + Vite + foundation-sites.",
+  "keywords": [
+    "foundation-sites",
+    "foundation",
+    "react",
+    "vite",
+    "sass",
+    "scss",
+    "css-framework",
+    "react-router",
+    "spa"
+  ],
   "license": "MIT",
+  "contributors": [
+    "Juan Manuel Villalba Rincón (https://github.com/jmvr24)",
+    "Miguel Angel Medina Diaz (https://github.com/MiguelMD06)",
+    "Juan David Fierro Calderón (https://github.com/JuanFierro15)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanFierro15/foundation-expo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JuanFierro15/foundation-expo/issues"
+  },
+  "homepage": "https://github.com/JuanFierro15/foundation-expo#readme",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "preinstall": "node -e \"if(!/npm/.test(process.env.npm_execpath||'')){console.error('\\n⚠️  Este proyecto usa npm (hay package-lock.json). No uses pnpm ni yarn.\\n   Corre: npm install\\n');process.exit(1)}\"",
     "dev": "vite",
