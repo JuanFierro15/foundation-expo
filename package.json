@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "description": "Exposición sobre el framework CSS Foundation for Sites — React + Vite + foundation-sites.",
+  "license": "MIT",
   "scripts": {
     "preinstall": "node -e \"if(!/npm/.test(process.env.npm_execpath||'')){console.error('\\n⚠️  Este proyecto usa npm (hay package-lock.json). No uses pnpm ni yarn.\\n   Corre: npm install\\n');process.exit(1)}\"",
     "dev": "vite",
